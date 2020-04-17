@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>HTML PARTIALS</title>
+  <!-- ###########################필요한 CSS 경로를 넣어주세요 ############################# -->
+  <link href="../../asset/css/jumpstudio.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!------------------------------------------------------ 
+  # html partial 방식
+  - header, footer 만 `include-html` 속성을 이용해서 import
+  - content의 경우, 그대로 작성한다
+  - 링크 없이, 다양한 페이지를 작업할 때 좋음
+  -------------------------------------------------------->
+<div class="wrap newsletter">
+  <!-- Header -->
+  <div include-html="./partials/header.html"></div>
+  <div include-html="./partials/visual-top-newsletter.html"></div>
+  <!-- #content -->
+  <div class="contents"> 
+    <div class="content-wrap">
+      <div class="news-detail">
+        <div class="detail-header">
+          <div class="item-title">SKT “올해 국내외 1등 기업과 협력해 세계 최고 5G 도전”</div>
+          <div class="item-date">2020.03.20</div>
+          <a href="#none" class="btn-list">목록보기</a>
+        </div>
+        <div class="detail-content">
+          <!-- 에디터 영역입니다. -->
+        </div>
+        <div class="detail-footer">
+          <div class="prev-wrap">
+            <a href="#none" class="btn-prev">이전글</a>
+            <span class="list-title">SK텔레콤, 3D 콘텐츠 제작 스튜디오 만든다</span>
+          </div>
+          <div class="next-wrap">
+            <span class="list-title">SKT “혼합현실 제작 시설 ‘점프 스튜디오’ 오픈”</span>
+            <a href="#none" class="btn-next">다음글</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div include-html="./partials/footer.html"></div>
+</div>
+
+<!-- ########################### script ############################# -->
+<script type="text/javascript" src="../../asset/js/common.js"></script>
+<script>
+  includeHTML();
+</script>
+</body>
+</html>

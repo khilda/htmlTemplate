@@ -1,0 +1,79 @@
+<div class="contents">
+  <form id="frm" method="post" action="">
+  <!-- #content -->
+  <!-- 인적사항/촬영요구사항/문의사항 -->
+  <section class="content-wrap">
+    <div class="form-group">
+      <div class="input-group">
+        <label for="ipName" class="input-label req" data-lang="label.name">성명</label>
+        <input type="text" id="ipName" name="name" placeholder="이름을 입력해 주세요." required="required" data-lang="input.name" />
+      </div>
+      <div class="input-group">
+        <label for="ipEmail" class="input-label req" data-lang="label.email">이메일</label>
+        <input type="text" id="ipEmail" name="email" placeholder="이메일을 입력해 주세요." required="required" data-lang="input.email" />
+      </div>
+      <div class="input-group">
+        <label for="ipPhone" class="input-label req" data-lang="label.phone">휴대폰 번호</label>
+        <input type="text" id="ipPhone" name="tel" placeholder="휴대폰 번호를 입력해 주세요." required="required" data-lang="input.phone" />
+      </div>
+      <div class="input-group">
+        <label for="ipCorp" class="input-label" data-lang="label.corp">회사 / 조직</label>
+        <input type="text" id="ipCorp" name="company" placeholder="회사명 / 조직명을 입력해 주세요." data-lang="input.corp" />
+      </div>
+      <div class="input-group">
+        <label for="ipWors" class="input-label" data-lang="label.works">활용 분야</label>
+        <input type="text" id="ipWors" name="field" placeholder="홀로그램, 게임, 공연, AR 마케팅 등" data-lang="input.works" />
+      </div>
+      <div class="input-group">
+        <label for="ipTarget" class="input-label" data-lang="label.target">촬영 대상</label>
+        <input type="text" id="ipTarget" name="target" placeholder="촬영 대상을 입력해 주세요." data-lang="input.target" />
+      </div>
+    </div>
+    <!--  촬영요구사항 : 추후오픈
+    <div class="primary-tit">촬영 요청 사항</div>
+    <div class="form-group">
+      <div class="input-group">
+        <label for="ipQues" class="input-label">질문</label>
+        <input type="text" id="ipQues" class="" placeholder="질문사항을 입력해 주세요." />
+      </div>
+      <div class="input-group">
+        <label for="ipScenario" class="input-label">시나리오 / 콘셉트</label>
+        <input type="text" id="ipScenario" class="" placeholder="시나리오 / 콘셉트를 입력해 주세요." />
+      </div>
+      <div class="input-group">
+        <label for="ipTime" class="input-label">콘텐츠 재생시간</label>
+        <input type="text" id="ipTime" class="" placeholder="콘텐츠 재생 시간을 입력해 주세요. (n분단위로 입력)" />
+      </div>
+      <div class="input-group">
+        <label for="ipDeadline" class="input-label">완료 희망 일정</label>
+        <input type="text" id="ipDeadline" class="" placeholder="완료 희망 일정을 입력해 주세요. (0000년 00월)" />
+        <span class="ip-txt-sm">촬영 일정 및 결과물 전달 일정은 오프라인 사전 협의에서 조율합니다.</span>
+      </div>
+    </div>
+    -->
+    <div class="primary-tit" data-lang="title.txt">문의 사항</div>
+    <div class="form-group">
+      <div class="input-group">
+        <textarea id="" name="inquiry" cols="30" rows="10"></textarea>
+      </div>
+      <div class="clear">
+        <div class="chk-group privacy-group">
+          <input type="checkbox" name="privacy" id="privacy" class="is-req" />
+          <label for="privacy" class="chk-label">
+            <span class="ico-chk"></span>
+            <button class="btn-txt" data-popup="popPrivacy">
+              <em class="color-danger" data-lang="label.req">(필수)</em>
+              <span class="label-txt" data-lang="label.privacy">개인 정보 수집 및 이용에 대한 동의</span>
+              <span class="label-txt txt-small" data-lang="label.detail">[자세히보기]</span>
+            </button>
+          </label>
+        </div>
+        <div class="btn-group">
+          <button id="btnSubmit" type="button" class="btn btn-send" data-lang="btn.send">보내기</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // #content -->
+  </form>
+</div>

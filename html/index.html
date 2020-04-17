@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="utf-8" />
+  <title>HTML PARTIALS</title>
+  <!-- ###########################필요한 CSS 경로를 넣어주세요 ############################# -->
+  <link href="../asset/css/jumpstudio.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="wrap">
+  <!-- Header -->
+  <div include-html="./partials/header.html"></div>
+
+  <!-- Footer -->
+  <div include-html="./partials/footer.html"></div>
+</div>
+
+<!-- ########################### script ############################# -->
+<script type="text/javascript" src="../asset/js/common.js"></script>
+<script>
+  includeHTML();
+</script>
+</body>
+</html>

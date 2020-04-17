@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/*Default set*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  -webkit-text-size-adjust: none;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  font-family:'AppleSDGothicNeo','Noto Sans KR', 'Noto Sans', 'Noto Sans CJK', 'Droid Sans', 'Roboto', "Apple SD Gothic Neo", "애플 SD 산돌고딕 Neo", "Helvetica Neue",sans-serif, 맑은고딕;
+  font-weight: 300;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+em, i{
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a,a:hover,a:active{
+  text-decoration: none;
+}
+button{
+  border:none;
+  background: transparent;
+}
+hr{display: none;}
+
+a,button,input,select{
+  font-family:'AppleSDGothicNeo','Noto Sans KR', 'Noto Sans', 'Noto Sans CJK', 'Droid Sans', 'Roboto', "Apple SD Gothic Neo", "애플 SD 산돌고딕 Neo", "Helvetica Neue",sans-serif, 맑은고딕;
+}
+
