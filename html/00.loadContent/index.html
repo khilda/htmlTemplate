@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="utf-8" />
+  <title>HTML PARTIALS</title>
+  <!-- ###########################필요한 CSS 경로를 넣어주세요 ############################# -->
+  <link href="../../asset/css/jumpstudio.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!------------------------------------------------------ 
+  # html partial 방식
+  - header, content, footer 모두 `include-html` 속성을 이용해서 import
+  - header의 GNB 클릭시 content의 영역에 내용을 import 할 수 있다.
+  - 한페이지로 모든 링크를 보고 싶을 때 좋음
+  - 레이아웃이 달라질 경우 추가적인 기능구현을 해야된다.
+  -------------------------------------------------------->
+<div class="wrap contactus newsletter">
+  <!-- Header -->
+  <div include-html="./partials/header.html"></div>
+  <div include-html="./partials/visual-top-contactus.html"></div>
+  <div include-html="./contents/contactus.html"></div>
+  <!-- Footer -->
+  <div include-html="./partials/footer.html"></div>
+</div>
+
+<!-- ########################### script ############################# -->
+<script type="text/javascript" src="../../asset/js/common.js"></script>
+<script>
+  includeHTML();
+  includeRouter()
+</script>
+</body>
+</html>

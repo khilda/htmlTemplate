@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>HTML PARTIALS</title>
+  <!-- ###########################필요한 CSS 경로를 넣어주세요 ############################# -->
+  <link href="../../asset/css/jumpstudio.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!------------------------------------------------------ 
+  # html partial 방식
+  - header, footer 만 `include-html` 속성을 이용해서 import
+  - content의 경우, 그대로 작성한다
+  - 링크 없이, 다양한 페이지를 작업할 때 좋음
+  -------------------------------------------------------->
+<div class="wrap contactus">
+  <!-- Header -->
+  <div include-html="./partials/header.html"></div>
+  <div include-html="./partials/visual-top-contactus.html"></div>
+  <!-- #content -->
+  <div class="contents">
+    <form id="frm" method="post" action="">
+    <!-- 인적사항/촬영요구사항/문의사항 -->
+    <section class="content-wrap">
+      <div class="form-group">
+        <div class="input-group">
+          <label for="ipName" class="input-label req" data-lang="label.name">성명</label>
+          <input type="text" id="ipName" name="name" placeholder="이름을 입력해 주세요." required="required" data-lang="input.name" />
+        </div>
+        <div class="input-group">
+          <label for="ipEmail" class="input-label req" data-lang="label.email">이메일</label>
+          <input type="text" id="ipEmail" name="email" placeholder="이메일을 입력해 주세요." required="required" data-lang="input.email" />
+        </div>
+        <div class="input-group">
+          <label for="ipPhone" class="input-label req" data-lang="label.phone">휴대폰 번호</label>
+          <input type="text" id="ipPhone" name="tel" placeholder="휴대폰 번호를 입력해 주세요." required="required" data-lang="input.phone" />
+        </div>
+        <div class="input-group">
+          <label for="ipCorp" class="input-label" data-lang="label.corp">회사 / 조직</label>
+          <input type="text" id="ipCorp" name="company" placeholder="회사명 / 조직명을 입력해 주세요." data-lang="input.corp" />
+        </div>
+        <div class="input-group">
+          <label for="ipWors" class="input-label" data-lang="label.works">활용 분야</label>
+          <input type="text" id="ipWors" name="field" placeholder="홀로그램, 게임, 공연, AR 마케팅 등" data-lang="input.works" />
+        </div>
+        <div class="input-group">
+          <label for="ipTarget" class="input-label" data-lang="label.target">촬영 대상</label>
+          <input type="text" id="ipTarget" name="target" placeholder="촬영 대상을 입력해 주세요." data-lang="input.target" />
+        </div>
+      </div>
+      <div class="primary-tit" data-lang="title.txt">문의 사항</div>
+      <div class="form-group">
+        <div class="input-group">
+          <textarea id="" name="inquiry" cols="30" rows="10"></textarea>
+        </div>
+        <div class="clear">
+          <div class="chk-group privacy-group">
+            <input type="checkbox" name="privacy" id="privacy" class="is-req" />
+            <label for="privacy" class="chk-label">
+              <span class="ico-chk"></span>
+              <button class="btn-txt" data-popup="popPrivacy">
+                <em class="color-danger" data-lang="label.req">(필수)</em>
+                <span class="label-txt" data-lang="label.privacy">개인 정보 수집 및 이용에 대한 동의</span>
+                <span class="label-txt txt-small" data-lang="label.detail">[자세히보기]</span>
+              </button>
+            </label>
+          </div>
+          <div class="btn-group">
+            <button id="btnSubmit" type="button" class="btn btn-send" data-lang="btn.send">보내기</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // #content -->
+    </form>
+  </div>
+  <!-- Footer -->
+  <div include-html="./partials/footer.html"></div>
+</div>
+
+<!-- ########################### script ############################# -->
+<script type="text/javascript" src="../../asset/js/common.js"></script>
+<script>
+  includeHTML();
+</script>
+</body>
+</html>

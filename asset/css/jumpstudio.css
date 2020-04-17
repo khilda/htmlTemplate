@@ -1,0 +1,496 @@
+@charset "UTF-8";
+@import url("reset.css");
+@import url("common.css");
+.contactus .visual-top{
+  background-image: url(../img/common/bg_top_contactus.png)
+}
+/*********************************************
+/* title
+*********************************************/
+.primary-tit{
+  border-bottom :1px solid #707070;
+  padding-bottom: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+.section-tit{
+  margin-bottom: 0.9375rem;
+  font-size: 1.125rem;
+  text-align: left;
+}
+/*********************************************
+/* button
+*********************************************/
+.btn-group{
+  text-align: right;
+}
+/*********************************************
+/* Contact Us - mobile
+@media (max-width: 575px){}
+*********************************************/
+/* layout *********************************************/
+.contactus .form-group{
+  padding: 2rem 0; 
+}
+.contactus .form-group input.is-req,
+.contactus .form-group input.is-req+label .ico-chk{
+  border-color: #f00;
+}
+.contactus .form-group input.is-req::placeholder,
+.contactus .form-group input.is-req+.chk-label em,
+.contactus .form-group input.is-req+.chk-label span,
+.contactus .form-group input.is-req+.chk-label .txt-small{
+  text-decoration: underline;
+  color: #f00;  
+}
+.contactus .form-group .ip-txt-sm{
+  position: relative;
+  display: block;
+  margin: 3px 0 0 0;
+  padding-left: 10px;
+  font-size: 0.875rem;
+  color: #A5A5A5;
+  word-break: keep-all;
+}
+.contactus .form-group .ip-txt-sm:before{
+  content:'*';
+  position: absolute;
+  left:0;
+  display: block;
+}
+/* 개인정보이용동의 ***********************************/
+.contactus .chk-group.privacy-group{
+  margin-bottom: 1.25rem;
+  vertical-align: middle;
+}
+.contactus .chk-group.privacy-group .chk-label{
+  font-size: 0.875rem;
+  text-align: left;
+  align-items: center;
+}
+.contactus .chk-group.privacy-group .chk-label .btn-txt{
+  padding:0;
+  text-align:left;
+  word-break: keep-all;
+}
+.contactus .chk-group.privacy-group .chk-label .color-danger{
+  color : #ff1212;
+}
+.contactus .chk-group.privacy-group .chk-label .txt-small{
+  font-size: 0.825rem;
+  color: #333333;
+  text-decoration: underline;
+}
+.contactus .btn-group .btn-send{
+  background: #000;
+  border-radius: 2.875rem;
+  width: 100%;
+  padding: 0.625rem 6.25rem;
+  color:#fff;
+}
+.contactus .btn-group .btn-send:active{
+  background: #707070;
+}
+/* popup ***********************************/
+.popup-wrap.privacy{
+  max-width: 500px;
+}
+.popup-wrap.privacy .privacy-title{
+  text-align :center;
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
+}
+.popup-wrap.privacy ul.list-ref{
+  margin-top: 1.875rem;
+}
+.popup-wrap.privacy ul.list-ref li{
+  margin-bottom: 0.1875rem;
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+/*********************************************
+* Contact Us - Tablet
+*********************************************/
+@media (min-width: 415px) and (max-width: 770px) {
+  .contactus .form-group .clear{
+    padding: 1.25rem 0;
+  }
+  .contactus .form-group .ip-txt-sm{
+    margin-top: 10px;
+    margin-left: 120px;
+  }
+  .contactus .chk-group.privacy-group{
+    float: left;
+    margin-top: 0.375rem;
+    margin-bottom: 0;
+  }
+  .contactus .btn-group .btn-send{
+    float: right;
+    width: calc(100% - 270px);
+    max-width: 250px;
+    padding: 0.625rem 0;
+  }
+
+}
+/*********************************************
+/* Contact Us - PC
+*********************************************/
+@media (min-width: 771px){
+  .contactus .form-group{
+    padding: 3.75rem 0; 
+  }
+  .contactus .form-group .ip-txt-sm{
+    margin-top: 10px;
+    margin-left: 170px;
+  }
+  .contactus .chk-group.privacy-group{
+    float: left;
+    margin-top: 0.9375rem;
+    margin-bottom: 0;
+  }
+  .contactus .btn-group .btn-send{
+    float: right;
+    width: auto;
+  }
+  .contactus .form-group .clear{
+    padding: 1.25rem 0;
+  }
+}
+.newsletter .visual-top{
+  background-image: url(../img/common/bg_top_contactus.png)
+}
+/*********************************************
+/* 구독해지페이지
+*********************************************/
+.newsletter .unsubscribe{
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  word-break: keep-all;
+}
+.newsletter .unsubscribe h1{
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.newsletter .unsubscribe p{
+  margin-bottom: 25px;
+  font-size: 13px;
+  color: #808080;
+}
+.newsletter .unsubscribe .btn-type02{
+  border-color: #DBDBDB;
+  border-radius: 40px;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 200;
+}
+.newsletter .footer-wrap{
+  margin: 0;
+}
+/*********************************************
+/* 뉴스리스트
+*********************************************/
+.newsletter .news-list{
+  position: relative;
+  border-top:1px solid #707070;
+  margin-bottom: 60px;
+}
+.newsletter .news-list .list-item{
+  position: relative;
+  border-bottom: 1px solid #DBDBDB;
+  padding: 30px 0;
+  font-size: 0;
+  vertical-align: middle;
+}
+.newsletter .news-list .list-item .img-wrap{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+.newsletter .news-list .list-item .img-wrap img{
+  width: 100%;
+}
+.newsletter .news-list .list-item .text-wrap{
+  display: inline-block;
+  margin-top: 30px;
+  vertical-align: top;
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+.newsletter .item-title{
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.newsletter .item-date{
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 12px;
+  color: #959595;
+}
+.newsletter .news-list .item-link{
+  display: inline-block;
+  font-size: 14px;
+  color: #959595;
+}
+.newsletter .news-list .item-link::after{
+  content:'';
+  display:inline-block;
+  border-top: 1px solid #959595;
+  border-right: 1px solid #959595;
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+.news-form{
+  margin-bottom: 100px;
+}
+.news-form .input-group{
+  text-align: center;
+}
+.news-form .input-group .input-label{
+  display: block;
+  width: auto;
+}
+.news-form .input-group .input-label+input{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.news-form .input-group .input-label+input+.btn-type01{
+  position: relative;
+  border-radius: 3rem;
+  padding: 0 30px;
+}
+/*********************************************
+/* 뉴스 상세보기
+*********************************************/
+.newsletter .news-detail{
+  margin: 55px 0;
+}
+.newsletter .news-detail .detail-header{
+  position: relative;
+  border-top:1px solid #707070;
+  padding:30px 0;
+  word-break: keep-all;
+}
+.newsletter .news-detail .detail-header .btn-list{
+  position: absolute;
+  right: 0;
+  top: -55px;
+  border: 1px solid #DBDBDB;
+  padding: 5px 10px;
+  color: #666666;
+  font-size: 14px;
+}
+.newsletter .news-detail .detail-content{
+  padding: 40px 0;
+}
+.newsletter .news-detail .detail-footer{
+  border-top: 1px solid #DBDBDB;
+  padding: 30px 0;
+  font-size: 0.875rem;
+}
+.newsletter .news-detail .detail-footer:after{
+  content:'';
+  display: table;
+  clear:both;
+}
+.newsletter .news-detail .detail-footer .prev-wrap,
+.newsletter .news-detail .detail-footer .next-wrap{
+  width: 50%;
+}
+.newsletter .news-detail .detail-footer .btn-prev,
+.newsletter .news-detail .detail-footer .btn-next{
+  color: #000;
+}
+.newsletter .news-detail .detail-footer .btn-prev::before,
+.newsletter .news-detail .detail-footer .btn-next::after{
+  content: '';
+  display: inline-block;
+  border: 1px solid transparent;
+  width: 5px;
+  height: 5px;
+  margin: 2px;
+  transform: rotate(45deg);
+}
+.newsletter .news-detail .detail-footer .list-title{
+  display: inline-block;
+  width: calc(100% - 100px);
+  max-width: 270px;
+  margin: 0 15px;
+  color: #999999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.newsletter .news-detail .detail-footer .prev-wrap{
+  float: left;
+}
+.newsletter .news-detail .detail-footer .next-wrap{
+  float: right;
+  text-align: right;
+}
+.newsletter .news-detail .detail-footer .btn-prev::before{
+  border-left-color:#000;
+  border-bottom-color:#000;
+}
+.newsletter .news-detail .detail-footer .btn-next::after{
+  border-top-color:#000;
+  border-right-color:#000;
+}
+/* 공유하기 */
+.social-wrap{
+  font-size: 0;
+  text-align: right;
+}
+.social-wrap .txt{
+  font-size: 14px;
+  vertical-align: middle;
+}
+.social-wrap .icon{
+  display: inline-block;
+}
+.social-wrap .item{
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+.social-wrap .item+.item{
+  margin-left: 3px;
+}
+.social-wrap .item.facebook{
+  background-image: url('../img/common/ico_facebook.svg')
+}
+.social-wrap .item.twitter{
+  background-image: url('../img/common/ico_twitter.svg')
+}
+.social-wrap .item.instargram{
+  background-image: url('../img/common/ico_instargram.svg')
+}
+.social-wrap .item.naver{
+  background-image: url('../img/common/ico_naver.svg')
+}
+.social-wrap .item.bloter{
+  background-image: url('../img/common/ico_bloter.svg')
+}
+.social-wrap .item.tumblug{
+  background-image: url('../img/common/ico_tumblug.svg')
+}
+.social-wrap .item.linkedIn{
+  background-image: url('../img/common/ico_linked.svg')
+}
+.social-wrap .item.pinterest{
+  background-image: url('../img/common/ico_pinterest.svg')
+}
+.social-wrap .item.email{
+  background-image: url('../img/common/ico_email.svg')
+}
+.social-wrap .item.url{
+  background-image: url('../img/common/ico_url.svg')
+}
+/* Tablet/PC (narrow/wide) ******************************************/
+@media (min-width: 415px){
+  .newsletter .unsubscribe p .br{
+    display: block;
+  }
+  .news-form .input-group .input-label+input{
+    width: calc(100% - 150px);
+    margin:0 10px 0 0;
+  }
+  .newsletter .news-list .list-item .img-wrap{
+    width: 36vw;
+    margin: 0;
+  }
+  .newsletter .news-list .list-item .text-wrap{
+    width: calc(100% - 36vw);
+    padding-left: 30px;
+    margin: 0;
+  }
+  .newsletter .news-list .item-link{
+    display: block;
+  }
+  .newsletter .news-list .item-link{
+    position: absolute;
+    bottom: 25px;
+  }
+  .social-wrap .txt{
+    margin-right: 5px;
+  }
+}
+@media (min-width: 769px){
+  .newsletter .unsubscribe h1{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .newsletter .unsubscribe p{
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #808080;
+  }
+  .news-form .input-group .input-label{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .news-form .input-group .input-label+input{
+    width: calc(100% - 400px);
+    margin: 0 15px;
+  }
+  .newsletter .news-list .list-item .img-wrap{
+    width: 220px;
+    height: 140px;
+  }
+  .newsletter .news-list .list-item .text-wrap{
+    width: calc(100% - 250px);
+    height: 140px;
+  }
+  .newsletter .item-title{
+    font-size: 20px;
+  }
+  .newsletter .item-date{
+    font-size: 14px;
+  }
+  .newsletter .news-list .item-link{
+    font-size: 16px;
+  }
+  .newsletter .news-detail .detail-footer{
+    font-size: 16px;
+  }
+}
+/* PC *************************************************/
+@media (min-width: 1025px){
+  .newsletter .unsubscribe h1{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .newsletter .unsubscribe p{
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #808080;
+  }
+  .news-form .input-group .input-label+input{
+    width: 470px;
+  }
+  .social-wrap .item{
+    width: 25px;
+    height: 25px;
+  }
+  .social-wrap .txt{
+    margin-right: 8px;
+    font-size: 1rem;
+  }
+  .social-wrap .item+.item{
+    margin-left: 8px;
+  }
+}
